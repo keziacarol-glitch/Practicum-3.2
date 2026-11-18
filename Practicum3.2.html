@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QuizPulse - Feedback</title>
+</head>
+<body bgcolor="#f0f8ff">
+<center>
+<h1>
+<font color="#ff69b4">QuizPulse</font>
+</h1>
+<hr>
+<h2>Feedback Form</h2>
+<p>We would love to know about your QuizPulse experience!</p>
+
+<form action="feedback.php" method="post">
+<label for="name">Enter Your Name:</label>
+<br>
+<input type="text" name="name" id="name" required>
+<br><br>
+
+<label for="email">Enter Your Email:</label>
+<br>
+<input type="email" name="email" id="email" required>
+<br><br>
+
+<label for="quiz">Which quiz did you play?</label>
+<br>
+<select name="quiz" id="quiz">
+ <option>Web Technology</option>
+<option>General Knowledge</option>
+<option>Science</option>
+<option>Mathematics</option>
+<option>Computer Science</option>
+</select>
+<br><br>
+
+<label for="rating">How would you rate QuizPulse?</label>
+<br>
+<input type="radio" name="rating" value="Excellent" id="excellent">
+<label for="excellent">Excellent</label>
+<input type="radio" name="rating" value="Good" id="good">
+<label for="good">Good</label>
+<input type="radio" name="rating" value="Average" id="average">
+<label for="average">Average</label>
+<input type="radio" name="rating" value="Poor" id="poor">
+<label for="poor">Poor</label>
+<br><br>
+
+<label for="like">What did you like about QuizPulse?</label>
+<br>
+<input type="checkbox" name="like" value="Quizzes" id="quizzes">
+<label for="quizzes">Quizzes</label>
+<input type="checkbox" name="like" value="Design" id="design">
+<label for="design">Design</label>
+<input type="checkbox" name="like" value="Rewards" id="rewards">
+<label for="rewards">Rewards</label>
+<input type="checkbox" name="like" value="Easy to Use" id="easy-to-use">
+<label for="easy-to-use">Easy to Use</label>
+<br><br>
+
+<label for="suggestions">Any suggestions for us?</label>
+<br>
+<textarea id="suggestions" name="suggestions" rows="5" cols="35"></textarea>
+<br><br>
+
+<input type="submit" value="Submit Feedback">
+<input type="reset" value="Reset">
+
+</form>
+<br>
+<hr>
+<p>Thank you for helping us improve QuizPulse! </p>
+</center>
+</body>
+</html>
